@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Cat Intake form</h1>
+  <form method="get">
+    <label for="name">Name of Cat</label>
+    <input id='name' type="text" name="catName">
+    <p class="errorMessage"></p>
+    <br>
+    <label for="age">Age of Cat</label>
+    <input type="number" name="age" id="age" min="1">
+    <br>
+
+    <label for="days">Days Needed</label>
+    <div>
+      <label for="Mon">Mon</label>
+      <input type="checkbox" name="Mon" id="Mon">
+      <label for="Tue">Tue</label>
+      <input type="checkbox" name="Tue" id="Tue">
+      <label for="Wed">Wed</label>
+      <input type="checkbox" name="Wed" id="Wed">
+      <label for="Thu">Thr</label>
+      <input type="checkbox" name="Thu" id="Thr">
+      <label for="Fri">Fri</label>
+      <input type="checkbox" name="Fri" id="Fri">
+      <label for="Sat">Sat</label>
+      <input type="checkbox" name="Sat" id="Sat" disabled>
+      <label for="Sun">Sun</label>
+      <input type="checkbox" name="Sun" id="Sun" disabled>
+    </div>
+    <br>
+
+    <label for="time-arrive">Time Arrive</label>
+    <!-- <input type="time" id="appt" name="appt" min="09:00" max="18:00" required> -->
+    <input type="time" name="time-arrive" id="time-arrive" min="6:00" max="12:00">
+    <br>
+    <label for="time-leave">Time Leave</label>
+    <input type="time" name="time-leave" id="time-leave">
+    <br>
+    <label for="spay">Cat Spayed/Neutered</label>
+    <input type="checkbox" name="spay" id="spay">
+    <br>
+    <label for="special-diet">Special Diet</label>
+    <input type="checkbox" name="spay" id="special-diet">
+    <br>
+
+    <div id="describe-container">
+      <label for="describe-diet">Describe Diet</label>
+      <input type="text" id='describe-diet'>
+    </div>
+
+    
+    <br>
+
+    <fieldset id="temperament-field">
+      <legend>Temperament of Cat</legend>
+
+      <input type="radio" name="temperament" id="friendly">
+      <label for="friendly">Friendly</label>
+
+      <input type="radio" name="temperament" id="sleepy">
+      <label for="sleepy">Sleepy</label>
+
+      <input type="radio" name="temperament" id="independent">
+      <label for="independent">Independent</label>
+
+      <input type="radio" name="temperament" id="territorial">
+      <label for="territorial">Territorial</label>
+      <br>
+      <br>
+      <div id="territorial-container">
+        <label for="describe-territorial">Describe Territorial</label>
+        <input type="text">
+      </div>
+      <br>
+    </fieldset>
+
+    <label for="owner">Owner's Name</label>
+    <input id='owner' type="text">
+    <br>
+    <label for="daytime-phone">Daytime Phone</label>
+    <input type="tel" name="daytime-phone" id="daytime-phone">
+    <br>
+    <label for="cell-phone">Cell Phone</label>
+    <input type="tel" name="cell-phone" id="cell-phone">
+    <br>
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email">
+    <br>
+
+
+
+    <label for="emergency-name">Emergency Contact Name</label>
+    <input id='emergency-name' type="text" name="emergency-name">
+    <br>
+    <label for="emergency-phone">Emergency Contact Phone</label>
+    <input type="tel" name="emergency-phone" id="emergency-phone">
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>

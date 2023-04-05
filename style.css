@@ -1,0 +1,13 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  .focus-out{
+    border: 1px solid red;
+  }
+
+  #describe-container, #territorial-container {
+    display: none;
+    /* background-color: red; */
+  }
+  
