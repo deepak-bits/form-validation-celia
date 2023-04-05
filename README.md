@@ -33,8 +33,15 @@ The form is styled using the `style.css` file, which is linked in the head secti
 
 ## JavaScript
 
-The `app.js` file contains the JavaScript code that handles the form's behavior. When the form is submitted, the code validates the fields and displays an error message if any fields are missing or invalid.
+The `app.js` file contains the code for validating the form's fields when the user submits the form. It uses JavaScript to check that all required fields are filled in and that the values entered in the fields are valid.
+
+For example, the code checks that the Name of Cat field is not empty and that the Age of Cat field contains a number between 0 and 30. It also checks that the email address entered in the E-mail field is in a valid format.
+
+If any of the fields fail validation, the code displays an error message to the user explaining what needs to be corrected. Otherwise, the form data is submitted to the server for further processing.
+
+Overall, the app.js file is a crucial part of the form's functionality, ensuring that users provide accurate and complete information and helping to prevent errors and data loss.
+
 
 ## Author
 
-This form was created by [insert your name here].
+This form was created by Deepak.
